@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Federico Here!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="functions.js"></script>
+</head>
+<body>
+    <div id="corner-text">
+        <div class="circle"></div>
+        Federico Galli
+        <div id="corner-sub-text">Software Engineer</div>
+    </div>
+
+    <div class="top-right-menu">
+        <a href="#resume-section" class="text-button">Resume</a>
+        <a href="#projects" class="text-button"> Projects</a>
+        <a href="#contact" class="text-button">Contact</a>
+    </div>
+    <section class="hidden">
+        <div class="container">
+            <div class="image-wrapper">
+                <img src="images/TEO_0127 Federico Galli.jpg" alt="Photo" class="circle-photo">
+            </div>
+            <div class="text-container">
+                <p style="font-size: 60px;color: rgb(227, 166, 58);">Hello!</p>
+                <p><i>A Bit About Me</i></p>
+                <p>I'm a Software Engineer with passion for coding, machine learning and space stuff. 
+                    I excel in both frontend and backend development, turning ideas into reality with clean, scalable code. 
+                </p>
+                <p> Let's connect and build something amazing together!</p>
+    
+                <button class="link-button" onmouseover="changeColor('github')" onmouseout="changeColor('github')" id="link-button-github">
+                    <i class="fa fa-github" style="font-size:36px"></i>
+                </button>
+                <button class="link-button" onmouseover="changeColor('linkedin')" onmouseout="changeColor('linkedin')" id="link-button-linkedin">
+                    <i class="fa fa-linkedin" style="font-size:36px"></i>
+                </button>
+                <button class="link-button" onmouseover="changeColor('mail')" onmouseout="changeColor('mail')" id="link-button-mail">
+                    <i class="fa fa-paper-plane" style="font-size:36px"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="animate-on-scroll" id="resume-section">
+        <h1 class="section-header">Working experience 🧑‍🔧</h1>
+        <div class="resumee-container">
+            <div class="resumee-circle">Now - 03/24</div>
+            <p style="margin-left: 400px;margin-right:600px;">
+                <b><i>Intesa SanPaolo</i></b>, Software Engineer<br />
+                <br />
+                Development and maintenance of APIs / Database infrastructure using Java, Python and SQL. <br />
+                Usage of ETLs / Data Virtualization / BI tools such as Denodo, Qlik, PowerBI.
+            </p>
+
+            <div class="resumee-circle">03/24 - 09/22</div>
+            <p style="margin-left: 400px;margin-right:600px;">
+                <b><i>Regesta LAB</i></b>, Data Scientist/Analyst<br />
+                <br />
+                Usage and creation of Machine Learning algorithm (Python: TensorFlow, pandas, scikit, opencv...), Big Data cleaning and processing, <br />
+                Usage and application of LLM, Business Intelligence and Performance Management, Visual Analytics, Qlik apps developement, Power BI apps developement.
+            </p>
+
+        </div>
+    </section>
+
+</body>
+<script type="text/javascript" src="animations.js"></script>
+</html>

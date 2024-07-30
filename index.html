@@ -12,18 +12,22 @@
     <script type="text/javascript" src="scripts/functions.js"></script>
 </head>
 <body>
-    <div id="corner-text">
-        <div class="circle"></div>
-        Federico Galli
-        <div id="corner-sub-text">Software Engineer</div>
+
+    <div class="top-bar">
+        <div id="corner-text">
+            <div class="circle"></div>
+            Federico Galli
+            <div id="corner-sub-text">Software Engineer</div>
+        </div>
+    
+        <div class="top-right-menu">
+            <a href="#resume-section" class="text-button">Resume</a>
+            <a href="#projects-section" class="text-button"> Projects</a>
+            <a href="#contact" class="text-button">Contact</a>
+        </div>
     </div>
 
-    <div class="top-right-menu">
-        <a href="#resume-section" class="text-button">Resume</a>
-        <a href="#projects" class="text-button"> Projects</a>
-        <a href="#contact" class="text-button">Contact</a>
-    </div>
-    <section class="hidden">
+    <section >
         <div class="container">
             <div class="image-wrapper">
                 <img src="images/TEO_0127 Federico Galli.jpg" alt="Photo" class="circle-photo">
@@ -35,13 +39,17 @@
                     I excel in both frontend and backend development, turning ideas into reality with clean, scalable code. 
                 </p>
                 <p> Let's connect and build something amazing together!</p>
-    
-                <button class="link-button" onmouseover="changeColor('github')" onmouseout="changeColor('github')" id="link-button-github">
-                    <i class="fa fa-github" style="font-size:36px"></i>
-                </button>
-                <button class="link-button" onmouseover="changeColor('linkedin')" onmouseout="changeColor('linkedin')" id="link-button-linkedin">
-                    <i class="fa fa-linkedin" style="font-size:36px"></i>
-                </button>
+                
+                <a href="https://github.com/FedeGalli" target="_blank" rel="noopener noreferrer" class = "link-button-container">
+                    <button class="link-button" onmouseover="changeColor('github')" onmouseout="changeColor('github')" id="link-button-github">
+                        <i class="fa fa-github" style="font-size:36px"></i>
+                    </button>
+                </a>
+                <a href="https://www.linkedin.com/in/federico-galli-163029244/" target="_blank" rel="noopener noreferrer" class = "link-button-container">
+                    <button class="link-button" onmouseover="changeColor('linkedin')" onmouseout="changeColor('linkedin')" id="link-button-linkedin">
+                        <i class="fa fa-linkedin" style="font-size:36px"></i>
+                    </button>
+                </a>
                 <button class="link-button" onmouseover="changeColor('mail')" onmouseout="changeColor('mail')" id="link-button-mail">
                     <i class="fa fa-paper-plane" style="font-size:36px"></i>
                 </button>
@@ -49,27 +57,113 @@
         </div>
     </section>
 
-    <section class="animate-on-scroll" id="resume-section">
-        <h1 class="section-header">Working experience 🧑‍🔧</h1>
-        <div class="resumee-container">
-            <div class="resumee-circle">Now - 03/24</div>
-            <p style="margin-left: 400px;margin-right:600px;">
-                <b><i>Intesa SanPaolo</i></b>, Software Engineer<br />
-                <br />
-                Development and maintenance of APIs / Database infrastructure using Java, Python and SQL. <br />
-                Usage of ETLs / Data Virtualization / BI tools such as Denodo, Qlik, PowerBI.
-            </p>
-
-            <div class="resumee-circle">03/24 - 09/22</div>
-            <p style="margin-left: 400px;margin-right:600px;">
-                <b><i>Regesta LAB</i></b>, Data Scientist/Analyst<br />
-                <br />
-                Usage and creation of Machine Learning algorithm (Python: TensorFlow, pandas, scikit, opencv...), Big Data cleaning and processing, <br />
-                Usage and application of LLM, Business Intelligence and Performance Management, Visual Analytics, Qlik apps developement, Power BI apps developement.
-            </p>
+    <section id="resume-section">
+        <h1 class="section-header-resume">Working experience 🧑‍🔧</h1>
+        <div class="resume-container">
+            <div class="resume-item">
+                <div class="resumee-circle">Now - 03/24</div>
+                <p style="margin-left: 400px;margin-right:300px;">
+                    <b><i>Intesa SanPaolo</i></b>, Software Engineer<br />
+                    <br />
+                    Development and maintenance of APIs / Database infrastructure using Java, Python and SQL. <br />
+                    Usage of ETLs / Data Virtualization / BI tools such as Denodo, Qlik, PowerBI.
+                </p>
+            </div>
+            <div class="resume-item">
+                <div class="resumee-circle">03/24 - 09/22</div>
+                <p style="margin-left: 400px;margin-right:300px;">
+                    <b><i>Regesta LAB</i></b>, Data Scientist/Analyst<br />
+                    <br />
+                    Usage and creation of Machine Learning algorithm (Python: TensorFlow, pandas, scikit, opencv...), Big Data cleaning and processing, <br />
+                    Usage and application of LLM, Business Intelligence and Performance Management, Visual Analytics, Qlik apps developement, Power BI apps developement.
+                </p>
+            </div>
 
         </div>
     </section>
+
+    <section>
+        <h1 class="section-header-education">Education 📚</h1>
+        <div class="resume-container">
+            <div class="education-item">
+                <div class="resumee-circle">2024</div>
+                <p style="margin-left: 400px;margin-right:300px;">
+                    <b><i>Self Taught</i></b>, By Me<br />
+                    <br />
+                    During the year i touched varius technologies such as: <br />
+                    Deep Dive to Data Structures and Algorithms, Good amount of LeetCode problems (to get rid of the rust), <br />
+                    React Native with Expo and so TypeScript and Javascript for app developement.
+                </p>    
+            </div>
+            <div class="education-item">
+                <div class="resumee-circle">2023</div>
+                <p style="margin-left: 400px;margin-right:300px;">
+                    <b><i>TensorFlow Developer Certificate</i></b>, TensorFlow Certificate Program<br />
+                    <br />
+                    Foundational principles of ML and Deep Learning, Building image recognition, object detection, text recognition algorithms with deep neural networks and onvolutional neural networks, <br />
+                    exploring strategies to prevent overfitting, including augmentation and dropouts.
+                </p>
+            </div>
+
+            <div class="education-item">
+                <div class="resumee-circle">2023</div>
+                <p style="margin-left: 400px;margin-right:300px;">
+                    <b><i>DeepLearning.AI TensorFlow Developer</i></b>, Coursera<br />
+                    <br />
+                    Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning, <br/>
+                    Convolutional Neural Networks in TensorFlow, Natural Language Processing in TensorFlow <br />
+                    Sequences, Time Series andPrediction.
+                </p>
+            </div>
+            <div class="education-item">
+                <div class="resumee-circle">2022</div>
+                <p style="margin-left: 400px;margin-right:300px;">
+                    <b><i>Bachelor’s Degree in Computer Engineering</i></b>, Università Degli Studi di Brescia<br />
+                    <br />
+                    Thesis title: Development and testing of Reinforcement Learning algorithms for rocket flight control.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section>
+
+    </section>
+        
+    <section id="projects-section">
+        <h1 class="section-header-projects">Projects 🧑‍🔬</h1>
+        <div class="image-grid-container">
+            <div class="image-tile"><img src="images/TEO_0127 Federico Galli.jpg" alt="Image 1">
+                <div class="scale"></div>
+            </div>
+            <div class="image-tile"><img src="images/TEO_0127 Federico Galli.jpg" alt="Image 2"></div>
+            <div class="image-tile"><img src="images/TEO_0127 Federico Galli.jpg" alt="Image 3"></div>
+            <div class="image-tile"><img src="images/TEO_0127 Federico Galli.jpg" alt="Image 4"></div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-bar"></div>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h2>Contanct Me</h2>
+                <p style="color: gray;">federicogalli96@gmail.com</p>
+            </div>
+            <div class="footer-column follow-me">
+                <h2>Follow Me</h2>
+                <div class="social-icons">
+                    <a href="https://github.com/FedeGalli" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-github" style="font-size:28px;color: black;"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/federico-galli-163029244/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-linkedin" style="font-size:28px;color: black;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-column credits">
+                <p style="color: gray;font-size: 12px;">© 2024 Designed by Federico Galli</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 <script type="text/javascript" src="scripts/animations.js"></script>

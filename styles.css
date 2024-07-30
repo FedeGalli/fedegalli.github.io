@@ -137,9 +137,13 @@ body {
     border-width: 0px;
     border-radius: 50%;
     background-color: rgb(243, 243, 243);
-    transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease, transform 0.5s ease;
     padding: 8px 12px;
     margin-top: 25px;
+}
+
+.link-button:hover {
+    transform: scale(1.20);
 }
 
 .link-button-container {
@@ -431,7 +435,7 @@ footer {
 .footer-bar {
     background-color: rgb(209, 209, 209); /* Gray bar color */
     height: 1px; /* Height of the gray bar */
-    margin: 0 20px; /* Margins on the left and right */
+    margin: 0 35px; /* Margins on the left and right */
 }
 
 .footer-content {
@@ -450,6 +454,8 @@ footer {
 
 .footer-column.credits {
     text-align: right;
+    margin-top: 30px;
+    
 }
 
 .footer-column h2 {
@@ -471,4 +477,12 @@ footer {
     gap: 10px; /* Space between icons */
     margin-top: 10px; /* Space above the icons */
     
+}
+
+.scale {
+    transition: transform 0.5s ease;
+}
+
+.scale:hover{
+    transform: scale(1.3);
 }

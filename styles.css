@@ -1,5 +1,5 @@
 /* styles.css */
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden;}
 
 @keyframes fadeInFromRight {
     0% {

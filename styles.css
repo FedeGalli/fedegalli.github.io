@@ -54,6 +54,7 @@ body {
     height: 100vh;
     font-family: "Work Sans", sans-serif;
     flex-direction: column;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
     
 }
 
@@ -358,7 +359,7 @@ section {
     min-height: 40vh;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px; /* Adjust the gap between the tiles as needed */
-    margin-top: 60px;
+    margin-top: 150px;
 }
 
 .image-tile {
@@ -372,6 +373,7 @@ section {
     opacity: 0;
     transform: translateY(200px);
     transition: opacity 1.5s ease-out, transform 1s ease;
+    z-index: 1001;
 }
 
 .image-tile img {
@@ -483,4 +485,13 @@ footer {
 
 .scale:hover{
     transform: scale(1.3);
+}
+
+.text-highlight {
+    color: gray;
+    transition: color 0.5s ease;
+}
+
+.text-highlight:hover {
+    color: rgb(227, 166, 58, 0.7);
 }

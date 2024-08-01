@@ -1,5 +1,9 @@
 /* styles.css */
-html { scroll-behavior: smooth; overflow-x: hidden;}
+html { 
+    overflow-x: hidden;
+    scroll-behavior: smooth; 
+
+}
 
 @keyframes fadeInFromRight {
     0% {
@@ -54,7 +58,6 @@ body {
     height: 100vh;
     font-family: "Work Sans", sans-serif;
     flex-direction: column;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
     
 }
 

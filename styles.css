@@ -203,7 +203,8 @@ section {
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 100vh;
+    min-height: auto;
+    padding: 120px 20px;
 }
 
 .resumee-circle {
@@ -369,20 +370,20 @@ section {
     display: grid;
     place-items: center;
     align-content:flex-start;
-    min-height: 40vh;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px; /* Adjust the gap between the tiles as needed */
-    margin-top: 150px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+    width: 100%;
+    max-width: 1000px;
 }
 
 .image-tile {
     width: 100%;
-    max-width: 300px; /* Adjust max-width as needed */
-    height: 400px;
-    aspect-ratio: 1;
+    max-width: 280px;
+    height: 280px;
     overflow: hidden;
-    border-radius: 10px; /* Optional: Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Box shadow */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transform: translateY(200px);
     transition: opacity 1.5s ease-out, transform 1s ease;
@@ -393,7 +394,7 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 1s ease-out; /* Scale transition */
+    transition: transform 1s ease-out;
 }
 
 .text-overlay {
@@ -418,26 +419,19 @@ section {
 
 .image-tile.visible {
     width: 100%;
-    max-width: 300px; /* Adjust max-width as needed */
-    height: 400px;
-    aspect-ratio: 1;
+    max-width: 280px;
+    height: 280px;
     overflow: hidden;
-    border-radius: 10px; /* Optional: Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Box shadow */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     opacity: 1;
     transform: translateY(0);
     filter: blur(0);
 }
 
 
-.image-tile img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .image-tile:hover img {
-    transform: scale(1.1); /* Scale up the image on hover */
+    transform: scale(1.1);
 }
 
 footer {

@@ -1,222 +1,282 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Federico Here!</title>
-    <link rel="icon" href="images/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script type="text/javascript" src="scripts/functions.js"></script>
-</head>
-<body>
+  </head>
 
+  <body>
+    <!-- TOP BAR -->
     <div class="top-bar">
-        <div id="corner-text">
-            <div class="circle"></div>
-            <div class="my-name">Federico Galli</div>
-            <div id="corner-sub-text">Software Engineer</div>
-        </div>
-    
-        <div class="top-right-menu">
-            <a href="#projects-section" class="text-button"> Projects</a>
-            <a href="#resume-section" class="text-button">Career</a>
-            <a href="#contact" class="text-button">Contact</a>
-            <a href="doc/federico_galli_resume.pdf" target="_blank" rel="noopener noreferrer" class="text-button-cv">Get resume</a>
-        </div>
+      <div id="corner-text">
+        <div class="circle"></div>
+        <div class="my-name">Federico Galli</div>
+        <div id="corner-sub-text">Software Engineer</div>
+      </div>
+
+      <div class="top-right-menu">
+        <a href="#projects-section" class="text-button">Projects</a>
+        <a href="#resume-section" class="text-button">Career</a>
+        <a href="#contact" class="text-button">Contact</a>
+        <a
+          href="doc/federico_galli_resume.pdf"
+          target="_blank"
+          class="text-button-cv"
+          >Get resume</a
+        >
+      </div>
     </div>
 
-    <section >
-        <div class="container">
-            <div class="image-wrapper">
-                <img src="images/TEO_0127 Federico Galli.jpg" alt="Photo" class="circle-photo">
-            </div>
-            <div class="text-container">
-                <p style="font-size: 60px;color: rgb(227, 166, 58);">Hello!</p>
-                <p><i>A Bit About Me</i></p>
-                <p>I'm a Software Engineer with passion for Coding, <br />
-                    Machine Learning and Space Stuff. <br />
-                    My main driver is Curiosity and is how i approach new Tech.
-                </p>
-                <p> Let's connect and build something amazing together!</p>
-                
-                
-                <a href="https://github.com/FedeGalli" target="_blank" rel="noopener noreferrer" class = "link-button-container">
-                    <button class="link-button" onmouseover="changeColor('github')" onmouseout="changeColor('github')" id="link-button-github">
-                            <i class="fa fa-github" style="font-size:36px"></i>
-                    </button>
-                </a>
-                <a href="https://www.linkedin.com/in/federico-galli-163029244/" target="_blank" rel="noopener noreferrer" class = "link-button-container">
-                    <button class="link-button" onmouseover="changeColor('linkedin')" onmouseout="changeColor('linkedin')" id="link-button-linkedin">
-                        <i class="fa fa-linkedin" style="font-size:36px"></i>
-                    </button>
-                </a>
-                <a href="mailto:federicogalli96@gmail.com" target="_blank" rel="noopener noreferrer" class = "link-button-container">
-                    <button class="link-button" onmouseover="changeColor('mail')" onmouseout="changeColor('mail')" id="link-button-mail">
-                        <i class="fa fa-paper-plane" style="font-size:36px"></i>
-                    </button>
-                </a>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="projects-section">
-        <h1 class="section-header-projects">Projects 🧑‍🔬</h1>
-        <div class="image-grid-container">
-
-            <div class="image-tile">
-                <a href="https://github.com/FedeGalli/AI-rockets" target="_blank" rel="noopener noreferrer" class = "link-button-container">
-                    <img src="images/rocket.png" alt="Image 1">
-                    <div class="text-overlay">
-                        <p>AI-Rockets</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="image-tile">
-                <a href="https://github.com/FedeGalli/Life-Balance-Telegram-Bot" target="_blank" rel="noopener noreferrer" class = "link-button-container">
-                    <img src="images/financial.png" alt="Image 2">
-                    <div class="text-overlay">
-                        <p>Personal Finance Tracking Service</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="image-tile">
-                <a href="https://github.com/FedeGalli/Pecunia" target="_blank" rel="noopener noreferrer" class = "link-button-container">
-                    <img src="images/mobile app.png" alt="Image 3">
-                    <div class="text-overlay">
-                        <p>Pecunia React Native App</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="image-tile">
-                <a href="https://github.com/FedeGalli/AI_Stoplight_Mac" target="_blank" rel="noopener noreferrer" class = "link-button-container">
-                    <img src="images/traffic.jpeg" alt="Image 4">
-                    <div class="text-overlay">
-                        <p>Stoplights RL Optimizer</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section id="resume-section">
-        <h1 class="section-header-resume">Working experience 🧑‍🔧</h1>
-        <div class="resume-container">
-            <div class="resume-item">
-                <div class="resumee-circle">Now - 03/24</div>
-                <p style="margin-left: 400px;margin-right:300px;">
-                    <b><i>Intesa SanPaolo</i></b>, Software Engineer<br />
-                    <br />
-                    • Focused on back-end development with the creation of microservices APIs using Java (Spring). <br />
-                    • Experienced in managing database infrastructure using Java, Python, and SQL, along with ETL, data virtualization, <br />
-                    • BI tools such as Tabular, Denodo, Qlik, and Power BI to enable business users to explore and analyze data.<br /><br />
-                    <b>Skills:</b> <i>Java, Python, Angular, SQL, PBI, Qlik Sense, Denodo</i>
-                </p>
-            </div>
-            <div class="resume-item">
-                <div class="resumee-circle">03/24 - 09/22</div>
-                <p style="margin-left: 400px;margin-right:300px;">
-                    <b><i>Regesta LAB</i></b>, Data Scientist/Analyst<br />
-                    <br />
-                    • Experience with the usage and creation of Machine Learning algorithms (TensorFlow, pandas, scikit-learn, OpenCV). <br />
-                    • Skilled in Big Data cleaning and processing. <br />
-                    • Application of LLM with RAG to fit specific business use cases, such as documentation retrieval and sales support, to generate the best fit for the customer. <br />
-                    • Proficient in Qlik app development and Power BI app development to enhance Performance Management and Visual Analytics.<br /><br />
-                    <b>Skills:</b> <i>Python, LLMs, TensorFlow, PBI, Qlik Sense</i>
-                </p>
-            </div>
-
-        </div>
-    </section>
-
+    <!-- HERO / SUMMARY -->
     <section>
-        <h1 class="section-header-education">Education 📚</h1>
-        <div class="resume-container">
-            <div class="education-item">
-                <div class="resumee-circle">2024</div>
-                <p style="margin-left: 400px;margin-right:300px;">
-                    <b><i>Self Taught</i></b>, By Me<br />
-                    <br />
-                    During the year i touched varius technologies such as: <br />
-                    Deep Dive to Data Structures and Algorithms, Good amount of LeetCode problems (to get rid of the rust), <br />
-                    React Native with Expo and so TypeScript and Javascript for app developement.
-                </p>    
-            </div>
-            <div class="education-item">
-                <div class="resumee-circle">2023</div>
-                <p style="margin-left: 400px;margin-right:300px;">
-                    <b><i>TensorFlow Developer Certificate</i></b>, TensorFlow Certificate Program<br />
-                    <br />
-                    Foundational principles of ML and Deep Learning, Building image recognition, object detection, text recognition algorithms with deep neural networks and onvolutional neural networks, <br />
-                    exploring strategies to prevent overfitting, including augmentation and dropouts.
-                </p>
-            </div>
-
-            <div class="education-item">
-                <div class="resumee-circle">2023</div>
-                <p style="margin-left: 400px;margin-right:300px;">
-                    <b><i>DeepLearning.AI TensorFlow Developer</i></b>, Coursera<br />
-                    <br />
-                    Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning, <br/>
-                    Convolutional Neural Networks in TensorFlow, Natural Language Processing in TensorFlow <br />
-                    Sequences, Time Series andPrediction.
-                </p>
-            </div>
-            <div class="education-item">
-                <div class="resumee-circle">2022</div>
-                <p style="margin-left: 400px;margin-right:300px;">
-                    <b><i>Bachelor’s Degree in Computer Engineering</i></b>, Università Degli Studi di Brescia<br />
-                    <br />
-                    Thesis title: Development and testing of Reinforcement Learning algorithms for rocket flight control.
-                </p>
-            </div>
+      <div class="container">
+        <div class="image-wrapper">
+          <img
+            src="images/TEO_0127 Federico Galli.jpg"
+            alt="Photo"
+            class="circle-photo"
+          />
         </div>
+
+        <div class="text-container">
+          <p style="font-size: 60px; color: rgb(227, 166, 58)">Hello!</p>
+          <p><i>Summary</i></p>
+
+          <p>
+            Software engineer with 3+ years of experience building
+            data-intensive backend systems and ML-powered products.<br />
+            Proven ability to design and optimize large-scale ETL pipelines (10×
+            throughput improvement), deploy production LLM applications,<br />
+            and ship full-stack tools end-to-end.
+          </p>
+
+          <p>
+            Seeking a software engineering role where I can tackle complex,
+            ambiguous problems at scale.
+          </p>
+
+          <!-- SOCIAL -->
+          <a
+            href="https://github.com/FedeGalli"
+            target="_blank"
+            class="link-button-container"
+          >
+            <button
+              class="link-button"
+              onmouseover="changeColor('github')"
+              onmouseout="changeColor('github')"
+            >
+              <i class="fa fa-github" style="font-size: 36px"></i>
+            </button>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/federico-galli-163029244/"
+            target="_blank"
+            class="link-button-container"
+          >
+            <button
+              class="link-button"
+              onmouseover="changeColor('linkedin')"
+              onmouseout="changeColor('linkedin')"
+            >
+              <i class="fa fa-linkedin" style="font-size: 36px"></i>
+            </button>
+          </a>
+
+          <a
+            href="mailto:federicogalli96@gmail.com"
+            class="link-button-container"
+          >
+            <button
+              class="link-button"
+              onmouseover="changeColor('mail')"
+              onmouseout="changeColor('mail')"
+            >
+              <i class="fa fa-paper-plane" style="font-size: 36px"></i>
+            </button>
+          </a>
+        </div>
+      </div>
     </section>
 
+    <!-- PROJECTS -->
+    <section id="projects-section">
+      <h1 class="section-header-projects">Projects 🧑‍🔬</h1>
 
-
-    <footer id="contact">
-        <div class="footer-bar"></div>
-        <div class="footer-content">
-            <div class="footer-column">
-                <h2>Contact Me</h2>
-                <div class="text-highlight">
-                    <p>federicogalli96@gmail.com</p>
-                </div>
-                
+      <div class="image-grid-container">
+        <div class="image-tile">
+          <a href="https://github.com/FedeGalli/AI-rockets" target="_blank">
+            <img src="images/rocket.png" />
+            <div class="text-overlay">
+              <p>AI Rockets — RL Flight Controller</p>
             </div>
-            <div class="footer-column follow-me">
-                <h2>Follow Me</h2>
-                <div class="social-icons">
-                    <a href="https://github.com/FedeGalli" target="_blank" rel="noopener noreferrer">
-                        <div class="scale">
-                            <i class="fa fa-github" style="font-size:28px;color: black;"></i>
-                        </div>
-                        
-                    </a>
-                    <a href="https://www.linkedin.com/in/federico-galli-163029244/" target="_blank" rel="noopener noreferrer">
-                        <div class="scale">
-                            <i class="fa fa-linkedin" style="font-size:28px;color: black;"></i>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="footer-column credits">
-                <div class="scale"></div>
-                <p style="color: gray;font-size: 12px;">
-                    © 2024 Designed by Federico Galli. <br />Powered by Pure JS, HTML and CSS
-                </p>
-            </div>
+          </a>
         </div>
+
+        <div class="image-tile">
+          <a
+            href="https://github.com/FedeGalli/Life-Balance-Telegram-Bot"
+            target="_blank"
+          >
+            <img src="images/financial.png" />
+            <div class="text-overlay">
+              <p>Personal Finance Tracker</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="image-tile">
+          <a
+            href="https://github.com/FedeGalli/quanto-mi-costi"
+            target="_blank"
+          >
+            <img src="images/mobile app.png" />
+            <div class="text-overlay">
+              <p>Italy Housing Calculator</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section>
+      <h1 class="section-header-education">Tech Stack ⚙️</h1>
+      <div class="resume-container">
+        <p style="margin-left: 400px; margin-right: 300px">
+          <b>Languages:</b> Python, Go, Java, C#, TypeScript, SQL, Zig<br /><br />
+          <b>Frameworks & Tools:</b> Apache Spark, BigQuery, DataProc,
+          TensorFlow, OpenCV, LangChain, LlamaIndex, Docker, GIT<br /><br />
+          <b>Concepts:</b> ETL Pipelines, Distributed Systems, LLM/RAG Systems,
+          Reinforcement Learning, Computer Vision, REST APIs
+        </p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="resume-section">
+      <h1 class="section-header-resume">Working Experience 🧑‍🔧</h1>
+
+      <div class="resume-container">
+        <div class="resume-item">
+          <div class="resumee-circle">Mar 2024 - Present</div>
+          <p style="margin-left: 400px; margin-right: 300px">
+            <b><i>Intesa Sanpaolo</i></b
+            >, Software Engineer — Data Platform<br /><br />
+
+            • 10× ETL performance improvement: Rearchitected the core reporting
+            ETL pipeline using Python and Apache Spark on Google DataProc,
+            reducing data reload time from 1.5 hours to 10 minutes — enabling
+            near-real-time dashboard refresh.<br />
+            • Managed and optimized large-scale data infrastructure on Google
+            BigQuery, ensuring data quality and reliability for downstream
+            reporting consumers.<br />
+            • Collaborated cross-functionally with BI and analytics teams to
+            define data contracts and schema evolution strategies.<br /><br />
+
+            <b>Skills:</b> <i>Python, Spark, BigQuery, DataProc, ETL</i>
+          </p>
+        </div>
+
+        <div class="resume-item">
+          <div class="resumee-circle">Sep 2022 - Mar 2024</div>
+          <p style="margin-left: 400px; margin-right: 300px">
+            <b><i>Regesta LAB</i></b
+            >, Data Scientist / ML Engineer<br /><br />
+
+            • LLM-powered product configuration tool: Built a RAG system
+            (LlamaIndex + LangChain) that automatically suggests configured
+            product quotations from customer requirements, eliminating manual
+            searches across 500+ pages of documentation and significantly
+            reducing sales cycle time.<br />
+            • Customer ticket retrieval system: Designed and deployed a semantic
+            search tool that surfaces relevant past support tickets and
+            documentation for front-desk operators, cutting average response
+            time by 20% and reducing ticket redundancy.<br />
+            • Applied TensorFlow and OpenCV to develop computer vision pipelines
+            for real-world classification and detection tasks.<br />
+            • Owned data cleaning and feature engineering workflows on large,
+            unstructured datasets.<br /><br />
+
+            <b>Skills:</b> <i>Python, LLMs, TensorFlow, OpenCV</i>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section>
+      <h1 class="section-header-education">Education 📚</h1>
+
+      <div class="resume-container">
+        <div class="education-item">
+          <div class="resumee-circle">2022</div>
+          <p style="margin-left: 400px; margin-right: 300px">
+            <b><i>Bachelor's Degree in Computer Engineering</i></b
+            ><br /><br />
+            Thesis: Development and Testing of Reinforcement Learning Algorithms
+            for Rocket Flight Control.
+          </p>
+        </div>
+
+        <div class="education-item">
+          <div class="resumee-circle">2023</div>
+          <p style="margin-left: 400px; margin-right: 300px">
+            <b><i>TensorFlow Developer Certificate</i></b
+            ><br /><br />
+            Topics: ML fundamentals, deep learning, image recognition, object
+            detection, NLP sequence models, time-series forecasting.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+      <div class="footer-bar"></div>
+
+      <div class="footer-content">
+        <div class="footer-column">
+          <h2>Contact Me</h2>
+          <p>federicogalli96@gmail.com</p>
+        </div>
+
+        <div class="footer-column">
+          <h2>Follow Me</h2>
+          <a href="https://github.com/FedeGalli" target="_blank">
+            <i class="fa fa-github" style="font-size: 28px"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/federico-galli-163029244/"
+            target="_blank"
+          >
+            <i class="fa fa-linkedin" style="font-size: 28px"></i>
+          </a>
+        </div>
+
+        <div class="footer-column">
+          <p style="color: gray; font-size: 12px">
+            © 2026 Federico Galli — Built with HTML, CSS & JS
+          </p>
+        </div>
+      </div>
     </footer>
 
-</body>
-<script type="text/javascript" src="scripts/animations.js"></script>
+    <script src="scripts/animations.js"></script>
+  </body>
 </html>
